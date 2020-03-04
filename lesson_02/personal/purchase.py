@@ -13,3 +13,4 @@ sub_total = item_one + item_two + item_three + item_four + item_five
 print("sub_total is : ",sub_total)
 total_sales = sub_total + sales_tax
 print("total_sales are : ",total_sales)
+
