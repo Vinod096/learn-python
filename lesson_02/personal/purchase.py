@@ -1,3 +1,4 @@
+#this is purchase.py
 sales_tax = 0.07
 item_one = int(input('enter the amount : '))
 print("amount : ",item_one)
