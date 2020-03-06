@@ -28,16 +28,16 @@ print("Amount_paid_for_purchasing_of_shares :",Amount_paid_for_purchasing_of_sha
 
 Commission_while_Purchasing = Amount_paid_for_purchasing_of_shares * stockbroker_commission
 
-print("Commission :",Commission_while_Purchasing)
+print("Commission paid for purchasing :",Commission_while_Purchasing)
 
 Sold_stock_amount = sold_amount_per_share * shares_purchased
 
-print("Total amount :",Sold_stock_amount)
+print("Total amount after selling shares :",Sold_stock_amount)
 
 Commission_while_Selling = Sold_stock_amount * stockbroker_commission
 
 print("Commission for selling :",Commission_while_Selling)
 
-Total_amount_with_Joe = Sold_stock_amount - Commission_while_Purchasing - Commission_while_Selling
+Total_amount_with_Joe = (Sold_stock_amount - Commission_while_Selling - Commission_while_Purchasing)
 
 print("Total amount left over with Joe :",Total_amount_with_Joe)
