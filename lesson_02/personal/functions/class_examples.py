@@ -1,4 +1,4 @@
-    # DRY - Do not Repeat yourself
+# DRY - Do not Repeat yourself
 
 # num_one = int(input("Number One >>> "))
 # num_two = int(input("Number Two >>> "))
