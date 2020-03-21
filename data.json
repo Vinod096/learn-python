@@ -1,0 +1,22 @@
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "hobbies": ["cricket", "football", "shuttle"],
+    "address": [
+        {
+            "add_1": "edwewed1",
+            "add_2": "edwewed2",
+            "add_3": "edwewed3"
+        },
+         {
+           "add_1": "edwewed1",
+           "add_2": "edwewed2",
+           "add_3": "edwewed3"
+         }
+    ]
+}
+
+data.firstName
+data.address[0].add_1
+
+data.hobbies[2]
