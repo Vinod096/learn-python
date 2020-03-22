@@ -6,3 +6,14 @@
 #• If the person is at least 13 years old, but less than 20 years old, he or she is a teenager.
 #• If the person is at least 20 years old, he or she is an adult.
 
+age = abs(int(input("Enter age :")))
+if age <= 1:
+    print("infant")
+elif age > 1 and age <= 13:
+    print("child")
+elif age > 13 and age <= 20:
+    print("teenager")
+elif age > 20:
+    print("adult")
+else:
+    print("enter correct value")
