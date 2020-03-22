@@ -3,7 +3,7 @@
 #3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday, and 7 = Sunday. The program should
 #display an error message if the user enters a number that is outside the range of 1 through 7.
 
-days_number = int(input("Enter a number : "))
+days_number = float(input("Enter a number : "))
 if days_number == 1 :
     print("monday")
 elif days_number == 2 :
