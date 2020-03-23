@@ -19,4 +19,4 @@ elif color_1 == 'red' and color_2 == 'yellow' or color_1 == 'yellow' and color_2
 elif color_1 == 'blue' and color_2 == 'yellow' or color_1 == 'yellow' and color_2 == 'blue':
     print("Secondary color is : Green")
 else:
-    print("please enter a color from given list")
+    print("*please enter a color from given list*")
