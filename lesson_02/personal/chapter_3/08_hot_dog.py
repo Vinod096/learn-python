@@ -9,15 +9,15 @@
 #• The number of hot dogs that will be left over
 #• The number of hot dog buns that will be left over
 
-total_hot_dogs = 10
-total_hot_dogs_buns = 8
+hot_dogs_packt = 10
+hot_dogs_buns_packt = 8
 people_attending = int(input("enter the number of people attending : "))
 hot_dog_for_each_person = int(input("enter the number of hot dogs for each person :"))
-minimum_number_of_hot_dogs_required = people_attending * hot_dog_for_each_person / total_hot_dogs
+minimum_number_of_hot_dogs_required = people_attending * hot_dog_for_each_person
 print("minimum hot dogs required :",minimum_number_of_hot_dogs_required)
-minimum_number_of_hot_dog_buns_required = people_attending * hot_dog_for_each_person / total_hot_dogs_buns
+minimum_number_of_hot_dog_buns_required = people_attending * hot_dog_for_each_person
 print("minimum number of packages of hot dog buns required :",minimum_number_of_hot_dog_buns_required)
-leftovers_hot_dogs = people_attending / total_hot_dogs
+leftovers_hot_dogs = minimum_number_of_hot_dogs_required % hot_dogs_packt
 print("hot dogs left over are :",leftovers_hot_dogs)
-leftovers_hot_dogs_buns = people_attending / total_hot_dogs_buns
+leftovers_hot_dogs_buns = minimum_number_of_hot_dog_buns_required % hot_dogs_buns_packt
 print("hot dogs left over are :", leftovers_hot_dogs_buns)
