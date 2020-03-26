@@ -3,7 +3,7 @@
 
 calories_burn_per_minute = 4.2
 minutes = 0
-for i in range (0,minutes+1):
+for i in range (0,minutes + 1):
     minutes = int(input("enter number of minutes :"))
     calories_burn_per_minute = calories_burn_per_minute * minutes
 print("calories burned :",calories_burn_per_minute)
