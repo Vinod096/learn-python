@@ -12,8 +12,13 @@
 #2               80
 #3               120
 
-distance_travelled = int(input("enter miles travelled : "))
-hours_travelled = int(input("Enter number of hours :"))
-for hours in range (1,hours_travelled):
-    distance = distance_travelled * hours_travelled
-print("In",hours_travelled,"hours,you've travelled",distance,"miles")
+speed = 0
+hours = 0
+speed = int(input("enter miles travelled : "))
+hours = int(float(input("Enter number of hours :")))
+print("********************")
+print("hours"  '\t' "speed"  '\t' "miles")
+print("********************")
+for hours in range (1,hours + 1):
+    distance = speed * hours
+    print(hours,'\t',speed,'\t',distance,"miles")
