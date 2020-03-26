@@ -3,13 +3,22 @@
 #month and keep a running total. When the loop finishes, the program should display the
 #amount that the user is over or under budget.
 
-budget_for_a_month = int(input("enter budget for a month : "))
-expenses = int(input("please enter expenses for month : "))
-total_expenses = 0
-for i in range (total_expenses == 0):
-    total_expenses += expenses
-    print(total_expenses)
-    if total_expenses < budget_for_a_month :
-        print("expenses are under budget")
+budget_for_a_month = float(input("enter budget for a month : "))
+print(budget_for_a_month)
+
+total = 0
+
+while(True):
+    value = float(input("Add expense : "))
+    total = total + value
+    print("Do you want to add another expense ")
+    choice = input("Enter Yes or No : ").lower()
+    if (choice == 'yes'):
+        continue
     else:
-       print("expense are over budget")
+        print(total)
+        if (total > budget_for_a_month):
+            print("Over Budget")
+        else:
+            print("Under Budget")
+        break
