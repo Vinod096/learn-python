@@ -7,7 +7,7 @@ total_days = 5
 total_bugs = 0
 for i in range(1, total_days + 1):
     bugs_collected = int(input("enter number of bugs collected per day  :"))
-    print("bugs collected per day :", bugs_collected)
+    print(f"Bugs collected per {i} : {bugs_collected}")
     total_bugs = total_bugs + bugs_collected
 print("total bugs collected for 5 days :",total_bugs)
 
