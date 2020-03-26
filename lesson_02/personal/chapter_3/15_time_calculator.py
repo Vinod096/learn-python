@@ -21,4 +21,3 @@ if seconds >= 3600 :
 if seconds >= 86400 :
     days = seconds / 86400
     print("days are :", days)
-
