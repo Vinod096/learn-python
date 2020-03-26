@@ -9,11 +9,11 @@ years = 0
 months = 0
 years = int(input("please enter year : "))
 for years in range (1,years + 1):
-    for months in range (1,13):
+    for i in range (1,13):
         inches = int(float(input("enter inches of rainfall : ")))
         months = months + inches
         print("rainfall is : ",months)
-    print("total rainfall is :",months)
+    print("total rainfall in inches is :",months)
 number_of_months = years * 12
 average_rainfall = months / number_of_months
 print("average rainfall is : ",average_rainfall)
