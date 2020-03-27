@@ -5,9 +5,7 @@
 
 tuition_fee_per_sem = 8000
 percent_of_fee_hike = 0.03
-total_fee_per_year = 0
 years = 5
-for years in range (1,years + 1):
-    tuition_fee_per_sem = (tuition_fee_per_sem * percent_of_fee_hike) + tuition_fee_per_sem
-    total_fee_per_year = total_fee_per_year + tuition_fee_per_sem
-    print(f"fee for {years} year : {total_fee_per_year}")
+for years in range (1,6):
+    tuition_fee_per_sem = tuition_fee_per_sem + (tuition_fee_per_sem * percent_of_fee_hike)
+    print(f"fee for {years} year : {tuition_fee_per_sem}")
