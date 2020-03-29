@@ -7,5 +7,7 @@ number = int(input("enter a positive number :"))
 while number > -1 :
     total = total + number
     number = int(input("enter a positive number or negative number to end :"))
-print("total of postive numbers is :",total)
+print("total of postive numbers :",total)
+
+
 
