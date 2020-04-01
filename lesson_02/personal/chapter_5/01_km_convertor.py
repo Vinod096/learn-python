@@ -2,6 +2,8 @@
 #distance to miles. The conversion formula is as follows:
 #Miles = Kilometers * 0.6214
 
-kilometers = float(input("enter kilometers :"))
-miles = kilometers * 0.6214
-print("distance travelled in miles :{0:2f}".format(miles))
+def miles():
+    kilometers = float(input("enter kilometers :"))
+    miles = kilometers * 0.6214
+    print("distance travelled in miles :{0:2f}".format(miles))
+miles()
