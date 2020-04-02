@@ -4,12 +4,10 @@
 #minimum amount of insurance he or she should buy for the property.
 
 def insurance(value):
-    insurance_for_property = (80/100) * value
-    return insurance_for_property
+    return (80/100) * value
 
 def property(value):
-    amount = insurance(value)
-    print("minimum amount of insurance is :",amount)
+    print(f"minimum amount of insurance is : {insurance(value)}")
 
 value = float(input("enter the value of property: "))
 
