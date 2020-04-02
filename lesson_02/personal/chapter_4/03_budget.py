@@ -5,9 +5,7 @@
 
 budget_for_a_month = float(input("enter budget for a month : "))
 print(budget_for_a_month)
-
 total = 0
-
 while(True):
     value = float(input("Add expense : "))
     total = total + value
