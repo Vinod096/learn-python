@@ -24,8 +24,8 @@ def total_of_purchase(amount,total_taxes):
 def main(amount):
     s_tax = state_sales_tax(amount)
     c_tax = county_sales_tax(amount)
-    t_tax = total_Of_taxes(state_tax,county_tax)
-    total = total_of_purchase(amount,total_taxes)
+    t_tax = total_Of_taxes(s_tax,c_tax)
+    total = total_of_purchase(amount,t_tax)
 
     print("state_sales_tax :",s_tax)
     print("county_sales_tax :",c_tax)
