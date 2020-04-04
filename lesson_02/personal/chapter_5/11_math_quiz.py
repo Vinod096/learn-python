@@ -14,7 +14,7 @@ def addition():
     if sum_of_numbers == add:
         print("Congratulations")
     else:
-        print("total of 2 numbers is :",add)
+        return("total of 2 numbers is :",add)
     return add
 
 def main():
