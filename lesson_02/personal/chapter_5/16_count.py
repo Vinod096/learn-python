@@ -6,7 +6,7 @@ import random
 
 def ran_numbers():
     number = 0
-    for number in range (1, 100):
+    for number in range (1, 101):
         number = random.randint(1, 100)
     return number
 
