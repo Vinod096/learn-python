@@ -16,28 +16,21 @@
 #• If both players make the same choice, the game must be played again to determine
 #the winner.
 
-import random
-
-def ran_numbers():
-    number = random.randint(1, 3)
-    return number
+from random import randint
 
 def computers_choice(number):
-    computer_choice = ran_numbers()
-    for choice in range (computer_choice) :
-        if choice == 1:
-            return ("rock")
-        if choice == 2:
-            return ("Paper")
-        if choice == 3:
-            return ("Scissors")
-    return choice
+    if number == 1:
+        return ("rock")
+    elif number == 2:
+        return ("paper")
+    else:
+        return ("scissors")
 
-def players_choice(choice):
-    print("choose rock or paper or scissors : ")
-    computer = choice
+def players_choice(computer_choice):
+    print("Choose rock or paper or scissors : ")
+    computer = computer_choice(randint(1, 3))
     print("computer choice :",computer)
-    while (True):
+    while (computer):
         player_choice = input("player_choice : ").lower()
         if computer == "rock" and player_choice == "scissors":
             print("rock wins")
@@ -55,15 +48,7 @@ def players_choice(choice):
             print("play again")
             break
         else:
-            print("worng input")
-    return computer, player_choice
+            print("wrong input")
+    print(f"Computer: {computer}, Player Choice: {player_choice}")
 
-def main():
-    r_numbers = ran_numbers()
-    c_choice = computers_choice(r_numbers)
-    p_choice = players_choice(c_choice)
-    print("random number is :",r_numbers)
-    print("computer choice is :",c_choice)
-    print("result :",p_choice)
-
-main()
+players_choice(computers_choice)
