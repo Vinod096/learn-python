@@ -9,4 +9,5 @@ user = int(input("How many random numbers in the file : "))
 file = open("random_number.txt","w")
 for i in range (1, user + 1):
     i += user + 1
+    file.write(str(i) + "\n")
     print("Random numbers :",i)
