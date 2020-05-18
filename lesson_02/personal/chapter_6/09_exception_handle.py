@@ -4,7 +4,3 @@
 #• It should handle any ValueError exceptions that are raised when the items that are read
 #from the file are converted to a number.
 
-golf_records = open("golf.txt", "r")
-records = golf_records.read()
-print("Player's records are :", "\n", records)
-golf_records.close()
