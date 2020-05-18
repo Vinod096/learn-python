@@ -11,11 +11,11 @@ def ran_numbers_in_file():
     number_of_items = len(count)
     return number_of_items
 
+num = files.readlines()
 def sum_of_numbers():
     total = 0
-    for total in files:
-        number = int(files.readline())
-        total += number
+    for total in num:
+        total += str(num)
     return total
 
 def main():
