@@ -5,18 +5,13 @@
 #• The total of the numbers in the list
 #• The average of the numbers in the list
 
-total_numbers = 20
-list_of_numbers = [0] * 20
-index = 0
-total = 0
-while index < total_numbers:
-    print('number -- ', index + 1, ':', sep='', end='')
-    list_of_numbers[index] = int(input())
-    index += 1
-for Value in list_of_numbers:
-    total += Value
+total_numbers = []
+for i in range (1,21):
+    numbers = int(str(input(f"Enter number {i} : ")))
+    total_numbers.append(numbers)
+total = sum(total_numbers)
 print("total of numbers is :", total)
-average = total / len(list_of_numbers)
+average = total / len(total_numbers)
 print("average of numbers is :", average)
-print("Maximum of list of numbers :", max(list_of_numbers))
-print("Minimum list of numbers :", min(list_of_numbers))
+print("Maximum of list of numbers :", max(total_numbers))
+print("Minimum list of numbers :", min(total_numbers))
