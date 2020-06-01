@@ -13,7 +13,5 @@ for letters in user:
         new_text.append(letters[1:] + letters[0] + 'ay')
     else:
         new_text.append(letters[1:-1] + letters[0] +'ay' + letters[-1])
-text = new_text[0]
-print("index 1 :",text)
 pig_latin = ''.join(new_text)
 print("pig latin word :",'\n',pig_latin)
