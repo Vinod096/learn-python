@@ -2,16 +2,9 @@
 #amounts should be stored in a list. Use a loop to calculate the total sales for the week and
 #display the result.
 
-number_of_days = 7
-sales = [0] * number_of_days
-index = 0
-total = 0
-print("Enter each day sales :")
-while index < number_of_days:
-    print('Day #',index + 1,':', sep = '', end = '')
-    sales[index] = float(input())
-    index += 1
-for value in sales:
-    total += value
-print("Total sales are :",total)
-
+everyday_sales = []
+for i in range (1,8):
+    number_of_sales = int(input(f"Enter day {i} : "))
+    everyday_sales.append(number_of_sales)
+total = sum(everyday_sales)
+print("Total sales in a week :",total)
