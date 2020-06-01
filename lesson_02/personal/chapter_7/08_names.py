@@ -13,6 +13,7 @@ boys_name = b_names.read()
 g_names = open('girls_names.txt','r')
 girls_names = g_names.read()
 all_names = boys_name + girls_names
+print(all_names)
 boys_name_search = str(input("Enter a boy name : ")).lower()
 girls_name_search = str(input("Enter a girl name : ")).lower()
 if boys_name_search in boys_name:
@@ -27,3 +28,6 @@ if boys_name_search in all_names and girls_name_search in all_names:
     print("You've entered a most popular names in boys name list and girls names list.")
 else:
     print("The names you've entered is not in neither boys nor in girls names lists")
+b_names.close()
+g_names.close()
+
