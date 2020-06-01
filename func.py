@@ -1,7 +1,7 @@
 # Closure
 def green():
     name = "John"
-    base = 23
+#    base = 23
     def hello():
         print(f"Hello, {name}")
     return hello
