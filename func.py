@@ -1,13 +1,17 @@
-def display_name(name):
-    """
-    Takes name as input and greets with hello
-    >>> display_name("John")
-    Hello John
-    >>> display_name("Joe")
-    Hello Joe
-    """
-    print("Hello", name)
+# Closure
+def green():
+    name = "John"
+    base = 23
+    def hello():
+        print(f"Hello, {name}")
+    return hello
 
-display_name("Joe")
+# print(green())
 
-print("Hello")
+red = green()
+blue = green()
+yello = green()
+
+red()
+blue()
+yello()
