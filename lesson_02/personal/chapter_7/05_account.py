@@ -15,3 +15,4 @@ if users_number in account_numbers:
     print("Entered number is valid.")
 else:
     print("Entered number is invalid")
+acc_numbers.close()
